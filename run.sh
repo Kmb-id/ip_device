@@ -18,12 +18,13 @@ Ketik() {
   echo
 }
 
-# INFO data ip + lokasi
-ip_address=$(curl -s ipinfo.io/ip)
-kota=$(curl -s ipinfo.io/city)
-provinsi=$(curl -s ipinfo.io/region)
-negara=$(curl -s ipinfo.io/country)
-provider=$(curl -s ipinfo.io/org)
+# INFO data ip Publik
+ip_address=$(curl -s https://api.ipify.org)
+# Mencari lokasi
+kota=$(curl -s https://ipapi.co/$ip_address/city)
+provinsi=$(curl -s https://ipapi.co/$ip_address/region)
+negara=$(curl -s https://ipapi.co/$ip_address/country_name)
+provider=$(curl -s https://ipapi.co/$ip_address/org)
 
 # Info HP/DEVICE
 MERK=$(getprop ro.product.marketname 2>/dev/null || echo "Unknown")

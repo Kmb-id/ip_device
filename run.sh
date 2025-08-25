@@ -7,6 +7,7 @@ R=$'\e[1;31m'
 G=$'\e[1;32m'
 Y=$'\e[1;33m'
 B=$'\e[1;34m'
+U=$'\e[1;35m'
 N=$'\e[0m'
 
 # Efek Ketik
@@ -54,5 +55,8 @@ Ketik "╠${N}$(printf '%.0s═' {1..46})${R}╣"
 Ketik "║ ${Y}Merk Device     : ${G}$MERK$(printf '%*s' $((27-${#MERK})) '')${R}║"
 Ketik "║ ${Y}Android Version : ${G}$ANDROID ${N}[${B}$MFAC${N}]$(printf '%*s' $((25-${#MFAC}-${#ANDROID}-1)) '')${R}║"
 Ketik "╚$(printf '%.0s═' {1..46})╝"
-Ketik "\n${N} NOTE:\n jika terjadi error pada lokasi tolong refresh jaringan (mode pesawat) sebentar saja. "
-Ketik " Powered by ${U}L4EROOR ${N}/ ${U}KMB\n${N} TERIMA KASIH ... SEE U NEXT !!! "
+echo -e "\n${N} NOTE:"
+Ketik "${B}  jika terjadi error pada ${Y}LOKASI "
+Ketik "${B} Mohon di refresh jaringannya ${N}(mode pesawat) ${B}sebentar saja. "
+Ketik "${N} Powered by ${U}L4EROOR ${N}/ ${U}KMB"
+Ketik "${N} TERIMA KASIH ... SEE U NEXT !!! "

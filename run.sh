@@ -1,4 +1,4 @@
-#!/bin/env/bash
+#!/usr/bin/env/bash
 # powered by L4EROOR / KMB
 # Date 26 agust 2025
 

@@ -33,6 +33,7 @@ ANDROID=$(getprop ro.build.version.release 2>/dev/null || echo "Unknown")
 # Cek installasi Package
 command -v curl >/dev/null 2>&1 || { echo >&2 "curl tidak ditemukan. Install curl terlebih dahulu.\n => apt-get install curl "; exit>
 command -v jq >/dev/null 2>&1 || { echo >&2 "jq tidak ditemukan. Install jq terlebih dahulu.\n => apt-get install jq "; exit 1; }
+command -v toilet >/dev/null 2>&1 || { echo >&2 "toilet tidak ditemukan. Install toilet terlebih dahulu.\n => apt-get install toilet "; exit 1; }
 
 clear
 echo;toilet -f pagga "SELAMAT DATANG" -F border --metal

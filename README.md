@@ -6,4 +6,6 @@
   <a href="https://t.me/L4EROOR"><img src="https://img.shields.io/badge/telegram-0088CC.svg?style=for-the-badge&logo=telegram&logoColor=white"/></a>
 
 ## Show IP Lock & Device
-- DEMO <img src="https://github.com/Kmb-id/ip_device/blob/main/Show_IP_DEVICE.jpg" width="100%">
+- DEMO
+  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Welcome.jpg" width="100%">
+  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Show_IP_DEVICE.jpg" width="100%">

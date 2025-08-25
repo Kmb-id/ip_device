@@ -7,5 +7,5 @@
 
 ## Show IP Lock & Device
 - DEMO
-  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Welcome.jpg" width="100%">
-  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Show_IP_DEVICE.jpg" width="100%">
+  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Demo.jpg/Welcome.jpg" width="100%">
+  - <img src="https://github.com/Kmb-id/ip_device/blob/main/Demo.jpg/Show_IP_DEVICE.jpg" width="100%">

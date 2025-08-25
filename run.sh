@@ -27,6 +27,7 @@ ip_address=$(curl -s https://api.ipify.org)
 kota=$(curl -s https://ipapi.co/$ip_address/city)
 provinsi=$(curl -s https://ipapi.co/$ip_address/region)
 negara=$(curl -s https://ipapi.co/$ip_address/country_name)
+timezone=$(curl -s https://ipapi.co/$ip_address/timezone)
 provider=$(curl -s https://ipapi.co/$ip_address/org)
 
 # Info HP/DEVICE

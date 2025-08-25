@@ -12,7 +12,8 @@ N=$'\e[0m'
 # Efek Ketik
 Ketik() {
   local text="$1"
-  for ((i=0; i<${#text}; i++)); do                                                                                                       echo -ne "${text:$i:1}"
+  for ((i=0; i<${#text}; i++)); do
+    echo -ne "${text:$i:1}"
     sleep 0.01
   done
   echo
@@ -20,6 +21,7 @@ Ketik() {
 
 # INFO data ip Publik
 ip_address=$(curl -s https://api.ipify.org)
+
 # Mencari lokasi
 kota=$(curl -s https://ipapi.co/$ip_address/city)
 provinsi=$(curl -s https://ipapi.co/$ip_address/region)
@@ -52,3 +54,5 @@ Ketik "╠${N}$(printf '%.0s═' {1..46})${R}╣"
 Ketik "║ ${Y}Merk Device     : ${G}$MERK$(printf '%*s' $((27-${#MERK})) '')${R}║"
 Ketik "║ ${Y}Android Version : ${G}$ANDROID ${N}[${B}$MFAC${N}]$(printf '%*s' $((25-${#MFAC}-${#ANDROID}-1)) '')${R}║"
 Ketik "╚$(printf '%.0s═' {1..46})╝"
+Ketik "\n${N} NOTE:\n jika terjadi error pada lokasi tolong refresh jaringan (mode pesawat) sebentar saja. "
+Ketik " Powered by ${U}L4EROOR ${N}/ ${U}KMB\n${N} TERIMA KASIH ... SEE U NEXT !!! "
